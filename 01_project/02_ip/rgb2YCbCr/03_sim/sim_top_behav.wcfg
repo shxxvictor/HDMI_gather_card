@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sim_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="sim_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000000 ms"></ZoomStartTime>
+      <ZoomEndTime time="60.700000001 ms"></ZoomEndTime>
+      <Cursor1Time time="29.520604311 ms"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="82"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="3" />
+   <wvobject type="group" fp_name="group13">
+      <obj_property name="label">sim_top</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/sim_top/clk_in">
+         <obj_property name="ElementShortName">clk_in</obj_property>
+         <obj_property name="ObjectShortName">clk_in</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/reset">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/tdata">
+         <obj_property name="ElementShortName">tdata[23:0]</obj_property>
+         <obj_property name="ObjectShortName">tdata[23:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/tlast">
+         <obj_property name="ElementShortName">tlast</obj_property>
+         <obj_property name="ObjectShortName">tlast</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/treadsy">
+         <obj_property name="ElementShortName">treadsy</obj_property>
+         <obj_property name="ObjectShortName">treadsy</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/tuser">
+         <obj_property name="ElementShortName">tuser</obj_property>
+         <obj_property name="ObjectShortName">tuser</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/tvalid">
+         <obj_property name="ElementShortName">tvalid</obj_property>
+         <obj_property name="ObjectShortName">tvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/done">
+         <obj_property name="ElementShortName">done</obj_property>
+         <obj_property name="ObjectShortName">done</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/done_dly">
+         <obj_property name="ElementShortName">done_dly</obj_property>
+         <obj_property name="ObjectShortName">done_dly</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/tdata_1">
+         <obj_property name="ElementShortName">tdata_1[23:0]</obj_property>
+         <obj_property name="ObjectShortName">tdata_1[23:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/tlast_1">
+         <obj_property name="ElementShortName">tlast_1</obj_property>
+         <obj_property name="ObjectShortName">tlast_1</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/tready_1">
+         <obj_property name="ElementShortName">tready_1</obj_property>
+         <obj_property name="ObjectShortName">tready_1</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/tuser_1">
+         <obj_property name="ElementShortName">tuser_1</obj_property>
+         <obj_property name="ObjectShortName">tuser_1</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/tvalid_1">
+         <obj_property name="ElementShortName">tvalid_1</obj_property>
+         <obj_property name="ObjectShortName">tvalid_1</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/fd_out">
+         <obj_property name="ElementShortName">fd_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">fd_out[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/tready">
+         <obj_property name="ElementShortName">tready</obj_property>
+         <obj_property name="ObjectShortName">tready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/FILE_BIN_OUT">
+         <obj_property name="ElementShortName">FILE_BIN_OUT[503:0]</obj_property>
+         <obj_property name="ObjectShortName">FILE_BIN_OUT[503:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group27">
+      <obj_property name="label">axis_gen</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/sim_top/u_axis_gen/clk_in">
+         <obj_property name="ElementShortName">clk_in</obj_property>
+         <obj_property name="ObjectShortName">clk_in</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/u_axis_gen/reset">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_axis_gen/tdata">
+         <obj_property name="ElementShortName">tdata[24:0]</obj_property>
+         <obj_property name="ObjectShortName">tdata[24:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/u_axis_gen/tlast">
+         <obj_property name="ElementShortName">tlast</obj_property>
+         <obj_property name="ObjectShortName">tlast</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/u_axis_gen/tready">
+         <obj_property name="ElementShortName">tready</obj_property>
+         <obj_property name="ObjectShortName">tready</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/u_axis_gen/tuser">
+         <obj_property name="ElementShortName">tuser</obj_property>
+         <obj_property name="ObjectShortName">tuser</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/u_axis_gen/tvalid">
+         <obj_property name="ElementShortName">tvalid</obj_property>
+         <obj_property name="ObjectShortName">tvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/u_axis_gen/done">
+         <obj_property name="ElementShortName">done</obj_property>
+         <obj_property name="ObjectShortName">done</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/u_axis_gen/done_dly">
+         <obj_property name="ElementShortName">done_dly</obj_property>
+         <obj_property name="ObjectShortName">done_dly</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/u_axis_gen/rst_in">
+         <obj_property name="ElementShortName">rst_in</obj_property>
+         <obj_property name="ObjectShortName">rst_in</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/u_axis_gen/rst_in_dly1">
+         <obj_property name="ElementShortName">rst_in_dly1</obj_property>
+         <obj_property name="ObjectShortName">rst_in_dly1</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/u_axis_gen/rst_in_dly2">
+         <obj_property name="ElementShortName">rst_in_dly2</obj_property>
+         <obj_property name="ObjectShortName">rst_in_dly2</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_axis_gen/rst_dly_cnt">
+         <obj_property name="ElementShortName">rst_dly_cnt[7:0]</obj_property>
+         <obj_property name="ObjectShortName">rst_dly_cnt[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_axis_gen/fd_in">
+         <obj_property name="ElementShortName">fd_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">fd_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_axis_gen/h_cnt">
+         <obj_property name="ElementShortName">h_cnt[15:0]</obj_property>
+         <obj_property name="ObjectShortName">h_cnt[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_axis_gen/v_cnt">
+         <obj_property name="ElementShortName">v_cnt[15:0]</obj_property>
+         <obj_property name="ObjectShortName">v_cnt[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_axis_gen/FILE_BIN_IN">
+         <obj_property name="ElementShortName">FILE_BIN_IN[471:0]</obj_property>
+         <obj_property name="ObjectShortName">FILE_BIN_IN[471:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group28">
+      <obj_property name="label">rgb2ycbcr</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/sim_top/u_rgb2YCbCr/clk_in">
+         <obj_property name="ElementShortName">clk_in</obj_property>
+         <obj_property name="ObjectShortName">clk_in</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/u_rgb2YCbCr/reset">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/rdata">
+         <obj_property name="ElementShortName">rdata[23:0]</obj_property>
+         <obj_property name="ObjectShortName">rdata[23:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/u_rgb2YCbCr/rlast">
+         <obj_property name="ElementShortName">rlast</obj_property>
+         <obj_property name="ObjectShortName">rlast</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/u_rgb2YCbCr/rready">
+         <obj_property name="ElementShortName">rready</obj_property>
+         <obj_property name="ObjectShortName">rready</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/u_rgb2YCbCr/ruser">
+         <obj_property name="ElementShortName">ruser</obj_property>
+         <obj_property name="ObjectShortName">ruser</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/u_rgb2YCbCr/rvalid">
+         <obj_property name="ElementShortName">rvalid</obj_property>
+         <obj_property name="ObjectShortName">rvalid</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/tdata">
+         <obj_property name="ElementShortName">tdata[23:0]</obj_property>
+         <obj_property name="ObjectShortName">tdata[23:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/u_rgb2YCbCr/tlast">
+         <obj_property name="ElementShortName">tlast</obj_property>
+         <obj_property name="ObjectShortName">tlast</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/u_rgb2YCbCr/tready">
+         <obj_property name="ElementShortName">tready</obj_property>
+         <obj_property name="ObjectShortName">tready</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/u_rgb2YCbCr/tuser">
+         <obj_property name="ElementShortName">tuser</obj_property>
+         <obj_property name="ObjectShortName">tuser</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/u_rgb2YCbCr/tvalid">
+         <obj_property name="ElementShortName">tvalid</obj_property>
+         <obj_property name="ObjectShortName">tvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/u_rgb2YCbCr/rst_in">
+         <obj_property name="ElementShortName">rst_in</obj_property>
+         <obj_property name="ObjectShortName">rst_in</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/u_rgb2YCbCr/rst_in_dly1">
+         <obj_property name="ElementShortName">rst_in_dly1</obj_property>
+         <obj_property name="ObjectShortName">rst_in_dly1</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/u_rgb2YCbCr/rst_in_dly2">
+         <obj_property name="ElementShortName">rst_in_dly2</obj_property>
+         <obj_property name="ObjectShortName">rst_in_dly2</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/sign_cb">
+         <obj_property name="ElementShortName">sign_cb[0:0]</obj_property>
+         <obj_property name="ObjectShortName">sign_cb[0:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/sign_cr">
+         <obj_property name="ElementShortName">sign_cr[0:0]</obj_property>
+         <obj_property name="ObjectShortName">sign_cr[0:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/R">
+         <obj_property name="ElementShortName">R[0:0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">R[0:0][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/G">
+         <obj_property name="ElementShortName">G[0:0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">G[0:0][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/B">
+         <obj_property name="ElementShortName">B[0:0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">B[0:0][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/M0">
+         <obj_property name="ElementShortName">M0[0:0][17:0]</obj_property>
+         <obj_property name="ObjectShortName">M0[0:0][17:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/M1">
+         <obj_property name="ElementShortName">M1[0:0][17:0]</obj_property>
+         <obj_property name="ObjectShortName">M1[0:0][17:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/M2">
+         <obj_property name="ElementShortName">M2[0:0][17:0]</obj_property>
+         <obj_property name="ObjectShortName">M2[0:0][17:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/M3">
+         <obj_property name="ElementShortName">M3[0:0][17:0]</obj_property>
+         <obj_property name="ObjectShortName">M3[0:0][17:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/M4">
+         <obj_property name="ElementShortName">M4[0:0][17:0]</obj_property>
+         <obj_property name="ObjectShortName">M4[0:0][17:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/M5">
+         <obj_property name="ElementShortName">M5[0:0][17:0]</obj_property>
+         <obj_property name="ObjectShortName">M5[0:0][17:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/M6">
+         <obj_property name="ElementShortName">M6[0:0][17:0]</obj_property>
+         <obj_property name="ObjectShortName">M6[0:0][17:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/M7">
+         <obj_property name="ElementShortName">M7[0:0][17:0]</obj_property>
+         <obj_property name="ObjectShortName">M7[0:0][17:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/M8">
+         <obj_property name="ElementShortName">M8[0:0][17:0]</obj_property>
+         <obj_property name="ObjectShortName">M8[0:0][17:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/A0">
+         <obj_property name="ElementShortName">A0[0:0][17:0]</obj_property>
+         <obj_property name="ObjectShortName">A0[0:0][17:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/A1">
+         <obj_property name="ElementShortName">A1[0:0][17:0]</obj_property>
+         <obj_property name="ObjectShortName">A1[0:0][17:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/A2">
+         <obj_property name="ElementShortName">A2[0:0][17:0]</obj_property>
+         <obj_property name="ObjectShortName">A2[0:0][17:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/A3">
+         <obj_property name="ElementShortName">A3[0:0][17:0]</obj_property>
+         <obj_property name="ObjectShortName">A3[0:0][17:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/A4">
+         <obj_property name="ElementShortName">A4[0:0][17:0]</obj_property>
+         <obj_property name="ObjectShortName">A4[0:0][17:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/A5">
+         <obj_property name="ElementShortName">A5[0:0][17:0]</obj_property>
+         <obj_property name="ObjectShortName">A5[0:0][17:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/Y">
+         <obj_property name="ElementShortName">Y[0:0][17:0]</obj_property>
+         <obj_property name="ObjectShortName">Y[0:0][17:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/Cb">
+         <obj_property name="ElementShortName">Cb[0:0][17:0]</obj_property>
+         <obj_property name="ObjectShortName">Cb[0:0][17:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/Cr">
+         <obj_property name="ElementShortName">Cr[0:0][17:0]</obj_property>
+         <obj_property name="ObjectShortName">Cr[0:0][17:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/u_rgb2YCbCr/rlast_dly1">
+         <obj_property name="ElementShortName">rlast_dly1</obj_property>
+         <obj_property name="ObjectShortName">rlast_dly1</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/u_rgb2YCbCr/rlast_dly2">
+         <obj_property name="ElementShortName">rlast_dly2</obj_property>
+         <obj_property name="ObjectShortName">rlast_dly2</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/u_rgb2YCbCr/rlast_dly3">
+         <obj_property name="ElementShortName">rlast_dly3</obj_property>
+         <obj_property name="ObjectShortName">rlast_dly3</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/u_rgb2YCbCr/ruser_dly1">
+         <obj_property name="ElementShortName">ruser_dly1</obj_property>
+         <obj_property name="ObjectShortName">ruser_dly1</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/u_rgb2YCbCr/ruser_dly2">
+         <obj_property name="ElementShortName">ruser_dly2</obj_property>
+         <obj_property name="ObjectShortName">ruser_dly2</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/u_rgb2YCbCr/ruser_dly3">
+         <obj_property name="ElementShortName">ruser_dly3</obj_property>
+         <obj_property name="ObjectShortName">ruser_dly3</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/u_rgb2YCbCr/rvalid_dly1">
+         <obj_property name="ElementShortName">rvalid_dly1</obj_property>
+         <obj_property name="ObjectShortName">rvalid_dly1</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/u_rgb2YCbCr/rvalid_dly2">
+         <obj_property name="ElementShortName">rvalid_dly2</obj_property>
+         <obj_property name="ObjectShortName">rvalid_dly2</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sim_top/u_rgb2YCbCr/rvalid_dly3">
+         <obj_property name="ElementShortName">rvalid_dly3</obj_property>
+         <obj_property name="ObjectShortName">rvalid_dly3</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/pix_per_clock">
+         <obj_property name="ElementShortName">pix_per_clock[31:0]</obj_property>
+         <obj_property name="ObjectShortName">pix_per_clock[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/data_width">
+         <obj_property name="ElementShortName">data_width[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_width[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/para_0183_10b">
+         <obj_property name="ElementShortName">para_0183_10b[9:0]</obj_property>
+         <obj_property name="ObjectShortName">para_0183_10b[9:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/para_0614_10b">
+         <obj_property name="ElementShortName">para_0614_10b[9:0]</obj_property>
+         <obj_property name="ObjectShortName">para_0614_10b[9:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/para_0062_10b">
+         <obj_property name="ElementShortName">para_0062_10b[9:0]</obj_property>
+         <obj_property name="ObjectShortName">para_0062_10b[9:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/para_0101_10b">
+         <obj_property name="ElementShortName">para_0101_10b[9:0]</obj_property>
+         <obj_property name="ObjectShortName">para_0101_10b[9:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/para_0338_10b">
+         <obj_property name="ElementShortName">para_0338_10b[9:0]</obj_property>
+         <obj_property name="ObjectShortName">para_0338_10b[9:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/para_0439_10b">
+         <obj_property name="ElementShortName">para_0439_10b[9:0]</obj_property>
+         <obj_property name="ObjectShortName">para_0439_10b[9:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/para_0399_10b">
+         <obj_property name="ElementShortName">para_0399_10b[9:0]</obj_property>
+         <obj_property name="ObjectShortName">para_0399_10b[9:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/para_0040_10b">
+         <obj_property name="ElementShortName">para_0040_10b[9:0]</obj_property>
+         <obj_property name="ObjectShortName">para_0040_10b[9:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/para_16_18b">
+         <obj_property name="ElementShortName">para_16_18b[17:0]</obj_property>
+         <obj_property name="ObjectShortName">para_16_18b[17:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sim_top/u_rgb2YCbCr/para_128_18b">
+         <obj_property name="ElementShortName">para_128_18b[17:0]</obj_property>
+         <obj_property name="ObjectShortName">para_128_18b[17:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

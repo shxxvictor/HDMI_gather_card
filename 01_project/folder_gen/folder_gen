@@ -1,0 +1,8 @@
+#!/bin/bash
+mkdir ../00_prj
+mkdir ../01_rtl
+mkdir ../02_ip
+mkdir ../03_sim
+mkdir ../04_vitis
+mkdir ../05_petalinux
+mkdir ../06_doc

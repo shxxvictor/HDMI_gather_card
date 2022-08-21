@@ -1,0 +1,47 @@
+1660s 229 6055 26.441	2399	2.5239
+1660t 279 6348 22.752
+3070l 499 13679 27.412	5999	2.2802
+
+gst-launch-1.0 v4l2src device=/dev/video0 ! video/x-raw, width=1920, height=1080 ! omxh264enc target-bitrate=20000 ! h264parse config-interval=-1 ! mpegtsmux ! rtpmp2tpay ! udpsink host=192.168.1.99 port=9001 sync=true
+
+gst-launch-1.0 v4l2src device=/dev/video0 ! video/x-raw, width=3840, height=2160, framerate=60/1  ! omxh264enc ! h264parse ! video/x-h264,stream-format=byte-stream ! filesink location="/media/sd-mmcblk0p1/test.mp4"
+
+gst-launch-1.0 v4l2src device=/dev/videoX io-mode=4 num-buffers=3600 ! video/x-raw, format=NV12,width=1920,height=1080,framerate=30/1 ! xilinxscd io-mode=5 ! omxh265enc qp-mode=auto gop-mode=basic gop-length=60 b-frames=0 target-bitrate=60000 num-slices=8 control-rate=constant prefetch-buffer=true low-bandwidth=false filler-data=true cpb-size=1000 initial-delay=500 ! queue ! video/x-h265, profile=main, alignment=au ! mpegtsmux alignment=7 name=mux ! filesink location="/media/sd-mmcblk0p1/test.ts"
+
+v4l2-ctl -d /dev/video0 --set-fmt-video=width=1920,height=1080,pixelformat='RGB'
+
+gst-launch-1.0 v4l2src device=/dev/video0 ! video/x-raw, width=1920, height=1080 ! omxh264enc ! h264parse ! video/x-h264,stream-format=byte-stream ! filesink location="/dyn/test.mp4"
+
+gst-launch-1.0 v4l2src device=/dev/video0 ! video/x-raw, width=1920, height=1080 ! omxh264enc ! h264parse ! video/x-h264,stream-format=byte-stream ! filesink location="/media/sd-mmcblk1p2/dyn/test.mp4"
+gst-launch-1.0 v4l2src device=/dev/video0 ! video/x-raw, width=3840, height=2160 ! omxh264enc ! h264parse ! video/x-h264,stream-format=byte-stream ! filesink location="/dyn/test.mp4"
+
+gst-launch-1.0 v4l2src device=/dev/video0 ! video/x-raw, width=1920, height=1080 ! omxh264enc target-bitrate=20000 ! h264parse config-interval=-1 ! video/x-h264,stream-format=byte-stream ! filesink location="/home/petalinux/dyn/test.mp4"
+
+gst-launch-1.0 v4l2src device=/dev/video0 io-mode=4 num-buffers=3600 ! video/x-raw, format=NV12, width=3840, height=2160, framerate=60/1 ! omxh265enc qp-mode=auto gop-mode=basic gop-length=60 b-frames=0 target-bitrate=60000 num-slices=8 control-rate=constant prefetch-buffer=true low-bandwidth=false filler-data=true cpb-size=1000 initial-delay=500 ! video/x-h265, stream-format=byte-stream ! filesink location="/dyn/test.mp4"
+gst-launch-1.0 v4l2src device=/dev/video0 num-buffers=1800 ! video/x-raw, width=3840, height=2160, framerate=60/1 ! omxh265enc target-bitrate=25000 control-rate=low-latency y444-to-gray=true num-slices=6 periodicity-idr=120 ! filesink location="/dyn/test.mp4"
+gst-launch-1.0 v4l2src device=/dev/video0 io-mode=4 ! video/x-raw, width=3840, height=2160, framerate=60/1 ! omxh265enc qp-mode=auto gop-mode=basic gop-length=60 b-frames=0 target-bitrate=60000 num-slices=8 control-rate=constant prefetch-buffer=true low-bandwidth=false filler-data=true cpb-size=1000 initial-delay=500 ! queue ! mpegtsmux alignment=7 name=mux ! filesink location="/dyn/test.mp4"
+gst-launch-1.0 v4l2src device=/dev/video0 io-mode=4 num-buffers=3600 ! video/x-raw, format=NV12,width=3840,height=2160,framerate=60/1 ! omxh265enc qp-mode=auto gop-mode=basic gop-length=60 b-frames=0 target-bitrate=60000 num-slices=8 control-rate=constant prefetch-buffer=true low-bandwidth=false filler-data=true cpb-size=1000 initial-delay=500 ! queue ! video/x-h265, profile=main, alignment=au ! mpegtsmux alignment=7 name=mux ! filesink location="/dyn/test.mp4"
+
+
+media-ctl -d /dev/media0 --set-v4l '"80010000.v_tpg":0 [fmt:RGB888_1X24/1920x1080@1/60]'
+media-ctl -d /dev/media0 -V '"80010000.v_tpg":0 [fmt:UYVY/1920x1080]'
+
+v4l2-ctl -d /dev/video0 --set-fmt-video=width=1920,height=1080,pixelformat='RGB3'
+v4l2-ctl -d /dev/video0 --set-fmt-video=width=1920,height=1080,pixelformat='YUYV'
+
+
+yavta -c10 -f RGB24 -s 1920x1080 --skip 7 -F /dev/video0
+yavta -c10 -f YUYV -s 1920x1080 --skip 7 -F /dev/video0
+
+yavta /dev/v4l-subdev0 --set-control '0x009f0903 11'
+
+
+media-ctl -d /dev/media0 -V '"80010000.v_tpg":0 [fmt:UYVY/3840x2160@1/60]'
+media-ctl -d /dev/media0 -V '"80010000.v_tpg":0 [fmt:YUY2/3840x2160@1/60]'
+
+v4l2-ctl -d /dev/video0 --set-fmt-video=width=3840,height=2160,pixelformat='YUYV'
+
+yavta -c10 -f YUYV -s 3840x2160 --skip 7 -F /dev/video0
+yavta -c10 -f RGB24 -s 3840x2160 --skip 7 -F /dev/video0
+
+yavta /dev/v4l-subdev0 --set-control '0x009f0903 0'
